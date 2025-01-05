@@ -1,0 +1,119 @@
+﻿/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    color: #333;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #dc3545;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #c82333;
+    }
+
+/* Categories Horizontal Navigation */
+.list-group {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    background: #f8f9fa;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .list-group li {
+        margin: 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .list-group a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: all 0.3s ease;
+        background-color: #ffffff;
+        border-right: 1px solid #ddd;
+    }
+
+        .list-group a:last-child {
+            border-right: none;
+        }
+
+        .list-group a:hover {
+            background-color: #4facfe;
+            color: #fff;
+        }
+
+/* Selected Content Section */
+#content {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    list-group {
+        flex-direction: column;
+    }
+
+        list-group a {
+            font-size: 16px;
+            padding: 10px;
+        }
+
+    h2 {
+        font-size: 24px;
+    }
+
+   link-button {
+        background: none;
+        border: none;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+        padding: 0;
+        font-size: inherit;
+    }
+
+        .link-button:hover {
+            text-decoration: none; /* Optional: Change styling on hover */
+        }
+}
